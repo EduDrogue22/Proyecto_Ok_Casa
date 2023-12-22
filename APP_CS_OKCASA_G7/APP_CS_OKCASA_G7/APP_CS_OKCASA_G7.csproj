@@ -1,0 +1,324 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{506A56BD-6848-4726-91DC-83C1E8557B7D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>APP_CS_OKCASA_G7</RootNamespace>
+    <AssemblyName>APP_CS_OKCASA_G7</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Fonts.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ActualizarSeguimiento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ActualizarSeguimiento.Designer.cs">
+      <DependentUpon>ActualizarSeguimiento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AgregarEquipo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AgregarEquipo.Designer.cs">
+      <DependentUpon>AgregarEquipo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AgregarInspeccion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AgregarInspeccion.Designer.cs">
+      <DependentUpon>AgregarInspeccion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AgregarUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AgregarUsuario.Designer.cs">
+      <DependentUpon>AgregarUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClienteBE.cs" />
+    <Compile Include="Connected Services\WSBANCOESTADO\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Connected Services\WSINICIARSESION\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="EliminarEquipo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EliminarEquipo.Designer.cs">
+      <DependentUpon>EliminarEquipo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EliminarInspeccion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EliminarInspeccion.Designer.cs">
+      <DependentUpon>EliminarInspeccion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EliminarUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EliminarUsuario.Designer.cs">
+      <DependentUpon>EliminarUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListaclienteBE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListaclienteBE.Designer.cs">
+      <DependentUpon>ListaclienteBE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListaHistorial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListaHistorial.Designer.cs">
+      <DependentUpon>ListaHistorial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListaInspeccion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListaInspeccion.Designer.cs">
+      <DependentUpon>ListaInspeccion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListaPagos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListaPagos.Designer.cs">
+      <DependentUpon>ListaPagos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListarEquipo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListarEquipo.Designer.cs">
+      <DependentUpon>ListarEquipo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListarUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListarUsuario.Designer.cs">
+      <DependentUpon>ListarUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListaSeguimiento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListaSeguimiento.Designer.cs">
+      <DependentUpon>ListaSeguimiento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ActualizarSeguimiento.resx">
+      <DependentUpon>ActualizarSeguimiento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AgregarEquipo.resx">
+      <DependentUpon>AgregarEquipo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AgregarInspeccion.resx">
+      <DependentUpon>AgregarInspeccion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AgregarUsuario.resx">
+      <DependentUpon>AgregarUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EliminarEquipo.resx">
+      <DependentUpon>EliminarEquipo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EliminarInspeccion.resx">
+      <DependentUpon>EliminarInspeccion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EliminarUsuario.resx">
+      <DependentUpon>EliminarUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListaclienteBE.resx">
+      <DependentUpon>ListaclienteBE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListaHistorial.resx">
+      <DependentUpon>ListaHistorial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListaInspeccion.resx">
+      <DependentUpon>ListaInspeccion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListaPagos.resx">
+      <DependentUpon>ListaPagos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListarEquipo.resx">
+      <DependentUpon>ListarEquipo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListarUsuario.resx">
+      <DependentUpon>ListarUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListaSeguimiento.resx">
+      <DependentUpon>ListaSeguimiento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Connected Services\WSBANCOESTADO\APP_CS_OKCASA_G7.WSBANCOESTADO.cliente.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\WSBANCOESTADO\APP_CS_OKCASA_G7.WSBANCOESTADO.helloResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\WSBANCOESTADO\APP_CS_OKCASA_G7.WSBANCOESTADO.ListarResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\WSBANCOESTADO\APP_CS_OKCASA_G7.WSBANCOESTADO.ProcesarPagoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\WSBANCOESTADO\WSOperaciones.wsdl" />
+    <None Include="Connected Services\WSBANCOESTADO\WSOperaciones.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\WSINICIARSESION\APP_CS_OKCASA_G7.WSINICIARSESION.LoginResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\WSINICIARSESION\APP_CS_OKCASA_G7.WSINICIARSESION.RutUsuarioResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\WSINICIARSESION\WSLOGIN.wsdl" />
+    <None Include="Connected Services\WSINICIARSESION\WSLOGIN.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BIBLIOTECA_NEGOCIO\BIBLIOTECA_NEGOCIO.csproj">
+      <Project>{4ffc042e-a9c4-4525-872e-4c55af62c422}</Project>
+      <Name>BIBLIOTECA_NEGOCIO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HISTORIAL_NEGOCIO\HISTORIAL_NEGOCIO.csproj">
+      <Project>{744ebe97-6e41-46b3-b163-492e2ad30553}</Project>
+      <Name>HISTORIAL_NEGOCIO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\INSPECCION_NEGOCIO\INSPECCION_NEGOCIO.csproj">
+      <Project>{6e4d2967-411a-4bad-a888-ff553459e107}</Project>
+      <Name>INSPECCION_NEGOCIO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LISTAPAGOS_NEGOCIO\LISTAPAGOS_NEGOCIO.csproj">
+      <Project>{7e9936fd-32b2-4481-a03f-1d2d49ec3b46}</Project>
+      <Name>LISTAPAGOS_NEGOCIO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SEGUIMIENTO_NEGOCIO\SEGUIMIENTO_NEGOCIO.csproj">
+      <Project>{8cbe6703-f3bf-469a-9701-7a1c018f4b58}</Project>
+      <Name>SEGUIMIENTO_NEGOCIO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\USUARIOS_NEGOCIO\USUARIOS_NEGOCIO.csproj">
+      <Project>{b2a1496b-513b-4984-9a85-af81962b100c}</Project>
+      <Name>USUARIOS_NEGOCIO</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Connected Services\WSBANCOESTADO\" />
+    <WCFMetadataStorage Include="Connected Services\WSINICIARSESION\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\WSBANCOESTADO\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\WSBANCOESTADO\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\WSBANCOESTADO\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\WSINICIARSESION\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\WSINICIARSESION\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\WSINICIARSESION\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://localhost:36908/WS_INICIARSESION/WSLOGIN?WSDL" uri="wsdl/localhost_36908/WS_INICIARSESION/WSLOGIN.wsdl"/>
+    <system systemId="http://localhost:36908/WS_INICIARSESION/WSLOGIN?xsd=1" uri="wsdl/localhost_36908/WS_INICIARSESION/WSLOGIN.xsd_1.xsd"/>
+    <system systemId="http://localhost:36908/ServicioWeb_SOAP/WSOperaciones?Tester" uri="wsdl/localhost_36908/ServicioWeb_SOAP/WSOperaciones.tester"/>
+    <system systemId="http://localhost:36908/ServicioWeb_SOAP/WSOperaciones?WSDL" uri="wsdl/localhost_36908/ServicioWeb_SOAP/WSOperaciones.wsdl"/>
+    <system systemId="http://localhost:36908/ServicioWeb_SOAP/WSOperaciones?xsd=1" uri="wsdl/localhost_36908/ServicioWeb_SOAP/WSOperaciones.xsd_1.xsd"/>
+    <system systemId="http://localhost:32924/ServicioWeb_SOAP/WSOperaciones?WSDL" uri="wsdl/localhost_32924/ServicioWeb_SOAP/WSOperaciones.wsdl"/>
+    <system systemId="http://localhost:32924/ServicioWeb_SOAP/WSOperaciones?xsd=1" uri="wsdl/localhost_32924/ServicioWeb_SOAP/WSOperaciones.xsd_1.xsd"/>
+    <system systemId="http://localhost:32924/WS_INICIARSESION/WSLOGIN?WSDL" uri="wsdl/localhost_32924/WS_INICIARSESION/WSLOGIN.wsdl"/>
+    <system systemId="http://localhost:32924/WS_INICIARSESION/WSLOGIN?xsd=1" uri="wsdl/localhost_32924/WS_INICIARSESION/WSLOGIN.xsd_1.xsd"/>
+    <system systemId="http://localhost:34113/Servicio_Pago/WSPagos?WSDL" uri="wsdl/localhost_34113/Servicio_Pago/WSPagos.wsdl"/>
+    <system systemId="http://localhost:34113/Servicio_Pago/WSPagos?xsd=1" uri="wsdl/localhost_34113/Servicio_Pago/WSPagos.xsd_1.xsd"/>
+    <system systemId="http://localhost:32924/WS_SEGUIMIENTO/wsSeguimiento?WSDL" uri="wsdl/localhost_32924/WS_SEGUIMIENTO/wsSeguimiento.wsdl"/>
+    <system systemId="http://localhost:32924/WS_SEGUIMIENTO/wsSeguimiento?xsd=1" uri="wsdl/localhost_32924/WS_SEGUIMIENTO/wsSeguimiento.xsd_1.xsd"/>
+    <system systemId="http://localhost:26784/ServicioWeb_SOAP/WSOperaciones?WSDL" uri="wsdl/localhost_26784/ServicioWeb_SOAP/WSOperaciones.wsdl"/>
+    <system systemId="http://localhost:26784/ServicioWeb_SOAP/WSOperaciones?xsd=1" uri="wsdl/localhost_26784/ServicioWeb_SOAP/WSOperaciones.xsd_1.xsd"/>
+    <system systemId="http://localhost:34113/WS_PAGO/WSPagos?WSDL" uri="wsdl/localhost_34113/WS_PAGO/WSPagos.wsdl"/>
+    <system systemId="http://localhost:34113/WS_PAGO/WSPagos?xsd=1" uri="wsdl/localhost_34113/WS_PAGO/WSPagos.xsd_1.xsd"/>
+</catalog>

@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.4.3 (RELEASE-2.4.3-ad3323c; 2019-01-21T17:46:06+0000) JAXWS-RI/2.3.2 JAXWS-API/2.3.2 JAXB-RI/2.3.2 JAXB-API/2.3.2 git-revision#unknown. --><xs:schema xmlns:tns="http://ws/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://ws/">
+
+<xs:element name="ActualizarSaldo" type="tns:ActualizarSaldo"/>
+
+<xs:element name="ActualizarSaldoResponse" type="tns:ActualizarSaldoResponse"/>
+
+<xs:element name="InformacionWebpay" type="tns:InformacionWebpay"/>
+
+<xs:element name="InformacionWebpayResponse" type="tns:InformacionWebpayResponse"/>
+
+<xs:element name="ListaBancos" type="tns:ListaBancos"/>
+
+<xs:element name="ListaBancosResponse" type="tns:ListaBancosResponse"/>
+
+<xs:element name="ProcesarPago" type="tns:ProcesarPago"/>
+
+<xs:element name="ProcesarPagoResponse" type="tns:ProcesarPagoResponse"/>
+
+<xs:complexType name="ProcesarPago">
+<xs:sequence>
+<xs:element name="total_pagar" type="xs:int"/>
+<xs:element name="pago" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ProcesarPagoResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="InformacionWebpay">
+<xs:sequence>
+<xs:element name="rut" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="InformacionWebpayResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:webpay" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="webpay">
+<xs:sequence>
+<xs:element name="id_cliente" type="xs:int"/>
+<xs:element name="n_banco" type="xs:string" minOccurs="0"/>
+<xs:element name="rut" type="xs:string" minOccurs="0"/>
+<xs:element name="saldo" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ActualizarSaldo">
+<xs:sequence>
+<xs:element name="rut" type="xs:string" minOccurs="0"/>
+<xs:element name="monto" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ActualizarSaldoResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ListaBancos">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="ListaBancosResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:banco" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="banco">
+<xs:sequence>
+<xs:element name="id_banco" type="xs:int"/>
+<xs:element name="n_banco" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>
